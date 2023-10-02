@@ -1,0 +1,125 @@
+*{
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    background-color: coral;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    color: white;
+    
+}
+
+.banner h1{
+    padding: 25px;
+}
+
+.glowny{
+    background-color: cornflowerblue;
+    min-height: 600px;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.p_pierwsze, .p_drugie, #wynik{
+    height: 150px;
+    width: 150px;
+    background-color: cornsilk;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.glowny p{
+    padding: 50px;
+}
+
+.stopka{
+    height: 100px;
+    width: auto;
+    margin-top: 0px;
+    background-color: #ff7f50;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.stopka p{
+    padding: 25px;
+}
+
+.plus{
+    height: 150px;
+    width: 150px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+#wynik1{
+    width: 150px;
+    height: 150px;
+    background-color: cornsilk;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+#test{
+    font-size: 40px;
+}
+
+#dobre{
+    
+        font-size: 40px;
+    
+}
+
+button{
+    border-radius: 42px;
+    font-size: 18px;
+    border-style: none;
+    font-family: Poppins;
+    font-weight: 500;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    padding: 2px 24px;
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+
+.menu{
+    text-align:center;
+    background-color: #FFA754;
+    margin-bottom: 5px;
+    height: 45px;
+    padding-top: 15px;
+}
+
+.menu a{
+    text-align:center;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+#start, #zapisz{
+    background-color: cornsilk;
+}
