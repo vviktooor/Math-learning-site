@@ -93,10 +93,10 @@
 
             if(l_zadan == 10|| l_zadan > 10){
                 document.getElementById("start").style.backgroundColor = "cornflowerblue";
-                document.getElementById("dobre").innerHTML = "Test został zakończony" + "</br>" + "Twój wynik to: " + poprawne + "<br/>" + "<form action='odejmowanie.php' method='post' name='formularz'>Imię: <input type='text' name='imie'> Nazwisko: <input type='text' name='nazwisko'> Klasa: <input name='klasa' type='text'><input type='hidden' name='punkty' id='punkty' readonly><input type='hidden' name='rodzaj_testu' value='odejmowanie' readonly></br><button name='zapisz' id='zapisz'>Prześlij wynik</button></form>";
+                document.getElementById("dobre").innerHTML = "<div class = 'end'>Test został zakończony" + "</br>" + "Twój wynik to: " + poprawne + "<br/>" + "<form action='sprawdzian.php' method='post' name='formularz'>Imię: <input type='text' name='imie'> Nazwisko: <input type='text' name='nazwisko'> Klasa: <input name='klasa' type='text'><input type='hidden' name='punkty' value=''></br><button name='zapisz'>Prześlij</button></form></div>";
                 document.getElementById("punkty").value = poprawne;
-                document.getElementById("start").innerHTML = "";
-                document.getElementById("start").element.onlick = "";
+                document.getElementById("start").style.display = "none";
+                document.getElementById("test").style.display = "none";
             }
 
 
@@ -125,8 +125,9 @@ if (isset($_POST['zapisz'])){
 ?>
 
 
-    </br>
-    <button type="submit" onclick="dodawanie(), losuj()" id="start">SPRAWDŹ</button>
+    <div class="button-container">
+        <button type="submit" onclick="dodawanie(), losuj()" id="start">SPRAWDŹ</button>
+    </div>
     
     
         <p id="test"></p>

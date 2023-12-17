@@ -1,125 +1,169 @@
-*{
-    font-family: Poppins;
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.banner{
-    margin-bottom: 5px;
-    margin-top: 0px;
+.banner {
+    text-align: center;
+    padding: 20px;
     background-color: coral;
-    height: 100px;
-    width: auto;
-    text-align: center;
     color: white;
-    
+    width: auto;
+    height: 100px;
 }
 
-.banner h1{
-    padding: 25px;
+.menu {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #FFA754;
+    margin-top: 0.25%;
+    width: auto;
+    height: 100px;
+    font-size: 30px;
 }
 
-.glowny{
-    background-color: cornflowerblue;
-    min-height: 600px;
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.glowny {
+    margin-top: 0.25%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-.p_pierwsze, .p_drugie, #wynik{
-    height: 150px;
-    width: 150px;
-    background-color: cornsilk;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
-}
-
-.glowny p{
-    padding: 50px;
-}
-
-.stopka{
-    height: 100px;
+    align-items: center;
+    padding: 20px;
+    background-color: cornflowerblue;
     width: auto;
-    margin-top: 0px;
-    background-color: #ff7f50;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-}
-
-.stopka p{
-    padding: 25px;
-}
-
-.plus{
-    height: 150px;
-    width: 150px;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
-}
-
-#wynik1{
-    width: 150px;
-    height: 150px;
-    background-color: cornsilk;
-    border: none;
-    font-size: 30px;
-    text-align: center;
-}
-
-#test{
+    height: calc(100vh - 340px);
     font-size: 40px;
 }
 
-#dobre{
-    
-        font-size: 40px;
-    
-}
-
-button{
-    border-radius: 42px;
-    font-size: 18px;
-    border-style: none;
-    font-family: Poppins;
-    font-weight: 500;
-    height: 50px;
-    width: auto;
+.p_pierwsze,
+.p_drugie,
+.plus {
+    flex: 1;
     text-align: center;
-    padding: 2px 24px;
-    display: inline-block;
-    margin-top: 20px;
-    
 }
 
-.menu{
-    text-align:center;
-    background-color: #FFA754;
-    margin-bottom: 5px;
-    height: 45px;
-    padding-top: 15px;
+#wynik {
+    flex: 2;
+    text-align: center;
+    width: auto;
 }
 
-.menu a{
-    text-align:center;
-    font-weight: 600;
-    margin-left: 10px;
-    margin-right: 10px;
+#wynik1 {
+    width: 80%;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 23px;
+    border: none;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
     color: white;
-    font-size: 20px;
-    text-decoration: none;
-    
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+    height: 50px;
+    width: 50%;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
 }
 
-#start, #zapisz{
-    background-color: cornsilk;
+button:hover {
+    border: 2px solid wheat;
+    color: white;
+  
 }
+
+input:hover{
+    border: 2px solid wheat;
+}
+
+.stopka {
+    text-align: center;
+    padding: 20px;
+    background-color: coral;
+    color: white;
+    margin-top: 0.25%;
+    width: auto;
+    height: 20%;
+    font-size: 30px;
+}
+
+.end{
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
+    align-items: center;
+    text-align: center;
+}
+
+.end input{
+    font-size: 22px;
+    border-radius: 42px;
+    font-family: Poppins;
+    border: none;
+}
+
+.menu a:hover{
+    text-shadow: cornflowerblue 1px 0 10px;
+    text-decoration: underline 2px white;
+}
+
+@media only screen and (max-width: 600px) {
+        /* Adjust styles for smaller screens */
+        .glowny {
+            height: auto;
+        }
+    
+        .p_pierwsze,
+        .p_drugie,
+        .plus {
+            flex: 1;
+            text-align: center;
+            width: 100%; /* Full width on smaller screens */
+            margin: 5px 0; /* Add some space between elements */
+        }
+    
+        #wynik1 {
+            width: 100%; /* Full width on smaller screens */
+        }
+    
+        .button-container {
+            margin-top: 20px; /* Increase space between button and other elements */
+        }
+
+        .end{
+            height: auto;
+        }
+        .menu{
+            font-size: 24px;
+            height: auto;
+        }
+    }
+

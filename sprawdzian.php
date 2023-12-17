@@ -81,9 +81,10 @@
             }
 
             if(l_zadan == 10|| l_zadan > 10){
-                document.getElementById("dobre").innerHTML = "Test został zakończony" + "</br>" + "Twój wynik to: " + poprawne + "<br/>" + "<form action='sprawdzian.php' method='post' name='formularz'>Imię: <input type='text' name='imie'> Nazwisko: <input type='text' name='nazwisko'> Klasa: <input name='klasa' type='text'><input type='hidden' name='punkty' value=''></br><button name='zapisz'>Prześlij wynik</button></form>";
+                document.getElementById("dobre").innerHTML = "<div class = 'end'>Test został zakończony" + "</br>" + "Twój wynik to: " + poprawne + "<br/>" + "<form action='sprawdzian.php' method='post' name='formularz'>Imię: <input type='text' name='imie'> Nazwisko: <input type='text' name='nazwisko'> Klasa: <input name='klasa' type='text'><input type='hidden' name='punkty' value=''></br><button name='zapisz'>Prześlij</button></form></div>";
                 document.getElementById("start").innerHTML = "";
-                document.getElementById("start").element.onlick = "";
+                document.getElementById("start").style.display = "none";
+                document.getElementById("test").style.display = "none";
             }
 
         }
@@ -110,9 +111,9 @@ if (isset($_POST['zapisz'])){
 ?>
 
 
-    </br>
-    <button type="submit" onclick="dodawanie(), losuj()" id="start">SPRAWDŹ</button>
-    
+    <div class="button-container">
+        <button type="submit" onclick="dodawanie(), losuj()" id="start">SPRAWDŹ</button>
+    </div>
     
         <p id="test"></p>
         <p id="dobre"></p>
