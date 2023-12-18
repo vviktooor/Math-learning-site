@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
+    <title>CALCULATOR</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!--czcionka-->
@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="banner">
-        <h1>KALKULATOR</h1>
+        <h1>CALCULATOR</h1>
 
         <div class="language">
             <a href="index.html"><img src="img/poland.png" alt=""></a>
@@ -23,10 +23,10 @@
     </div>
 
     <div class="menu">
-        <a href="pl/index.html">Dodawanie</a>
-        <a href="pl/odejmowanie.html">Odejmowanie</a>
-        <a href="pl/mnozenie.html">Mnożenie</a>
-        <a href="pl/dzielenie.html">Dzielenie</a><a href=""></a>
+        <a href="index_en.html">Addition</a>
+        <a href="en/odejmowanie_en.html">Subtraction</a>
+        <a href="en/mnozenie_en.html">Multiplication</a>
+        <a href="en/dzielenie_en.html">Division</a><a href=""></a>
     </div>
 
     <section class="glowny">
@@ -65,44 +65,44 @@
                 if(dodaj == document.getElementById("wynik1").value){
                     i++;
                 }
-                document.getElementById("dobre").innerHTML = "Masz" + i + "/10";
+                document.getElementById("dobre").innerHTML = "You have" + i + "/10";
             }
 
             
 
             function dodawanie(){
             if(dodaj == document.getElementById("wynik1").value){
-                document.getElementById("test").innerHTML = "Dobrze " + "<img src='img/smile.png' alt='happy'>";
+                document.getElementById("test").innerHTML = "Great " + "<img src='img/smile.png' alt='happy'>";
                 setTimeout("location.reload()",1000*3);
             }
 
             else if(dodaj !== document.getElementById("wynik1").value && document.getElementById("wynik1").value !== ''){
-                document.getElementById("test").innerHTML = "Źle " + "<img src='img/dissapointment.png' alt='dissapointment'>";
+                document.getElementById("test").innerHTML = "Bad " + "<img src='img/dissapointment.png' alt='dissapointment'>";
                 setTimeout("location.reload()",1000*3);
             }
 
             else{
-                document.getElementById("test").innerHTML = "Proszę wpisać wartość";
+                document.getElementById("test").innerHTML = "Please write an answer";
             }
         }
 
     </script>
     
         <div class="button-container">
-            <button onclick="dodawanie()" type="submit">SPRAWDŹ</button>
+            <button onclick="dodawanie()" type="submit">CHECK</button>
                 <p id="test"></p>
                 <p id="dobre"></p>
             </div>
     </section>
 
     <div class="menu">
-        <a href="pl/dodawanie.php">Sprawdzian</a>
-        <a href="pl/index.html">Nauka</a>
+        <a href="en/dodawanie_en.php">Exam</a>
+        <a href="index_en.html">Learning</a>
 
     </div>
 
     <div class="stopka">
-        <p>Strona do nauki matematyki</p>
+        <p>Mathematics learning page</p>
     </div>
 
 
