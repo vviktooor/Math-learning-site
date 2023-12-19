@@ -25,7 +25,7 @@
 ###
 
 <div align="center">
-  <img height="200" src="mobile-version.png"  />
+  <img height="200" src="mobile_version.png"  />
 </div>
 
 ###
